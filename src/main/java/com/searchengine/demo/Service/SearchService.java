@@ -14,7 +14,7 @@ public class SearchService {
     // function to do search and return imdbIDs
     public List<Movie> getSearchRes(String content) throws Exception{
         MyIndexReader myIndexReader = new MyIndexReader();
-        List<Movie> results = myIndexReader.getTopN(content,10);
+        List<Movie> results = myIndexReader.getTopN(content,16);
         return results;
     }
 }
